@@ -44,6 +44,7 @@ export default function ParticleTulipHero() {
         bx: flat[i],
         by: flat[i + 1],
         brightness: flat[i + 2],
+        warm: Math.random(),
         phase: Math.random() * Math.PI * 2,
         speed: 0.00025 + Math.random() * 0.0004,
         ampX: 0.7 + Math.random() * 1.6,
@@ -178,7 +179,10 @@ export default function ParticleTulipHero() {
 
         const size = 0.55 + p.brightness * 1.35;
         const alpha = 0.22 + p.brightness * 0.78;
-        ctx.fillStyle = `rgba(255,255,255,${alpha})`;
+        const mix = p.warm * (1 - p.brightness * 0.5);
+        const g = Math.round(255 - mix * 45);
+        const b = Math.round(255 - mix * 175);
+        ctx.fillStyle = `rgba(255,${g},${b},${alpha})`;
         ctx.fillRect(p.x - size / 2, p.y - size / 2, size, size);
       }
 
