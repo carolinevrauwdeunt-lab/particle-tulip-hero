@@ -358,6 +358,7 @@ a.node:hover {
 @media (max-width: 620px) {
   .wordmark { left: 20px; top: 20px; }
   .hero-titleblock { right: 20px; left: 20px; min-width: 0; }
+  .scroll-cue { display: none; }
   .schematic { flex-wrap: wrap; gap: 10px; justify-content: center; }
   .schematic .wire { display: none; }
   .about-row { grid-template-columns: 1fr; }
