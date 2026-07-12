@@ -152,8 +152,7 @@ export default function ArtLab() {
         <span>SHEET 1 OF 1 &mdash; REVISIONS ONGOING</span>
       </div>
       <p className="gen-note">
-        NOTE &mdash; LIVE FIGURES ARE BUILT TO BE HANDLED. MOVE YOUR CURSOR OR A FINGER
-        THROUGH THE FIELD; IT PARTS AND SETTLES BACK.
+        NOTE &mdash; PLEASE TOUCH THIS ART. USUALLY, YOU CAN&rsquo;T.
       </p>
 
       <section className="plates">
